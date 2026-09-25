@@ -1,0 +1,24 @@
+{
+  "name": "msproductstudio-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 3100",
+    "build": "next build",
+    "check": "tsc --noEmit",
+    "preview": "python3 -m http.server 3100 --bind 0.0.0.0 --directory out"
+  },
+  "dependencies": {
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5.9"
+  }
+}

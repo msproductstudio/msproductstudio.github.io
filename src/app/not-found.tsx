@@ -1,0 +1,1 @@
+export default function NotFound(){return <html lang="en"><body><main className="not-found"><p>404</p><h1>Page not found / Página não encontrada</h1><a className="button" href="/pt/">Português →</a> <a className="button secondary" href="/en/">English →</a></main></body></html>}

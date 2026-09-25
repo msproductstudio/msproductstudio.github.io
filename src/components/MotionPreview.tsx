@@ -1,0 +1,3 @@
+"use client";
+import {useRef,useState} from "react";
+export default function MotionPreview({src,poster,label,play,pause}:{src:string;poster:string;label:string;play:string;pause:string}){const ref=useRef<HTMLVideoElement>(null);const [active,setActive]=useState(false);return <div className="motion-preview"><video ref={ref} src={src} poster={poster} loop muted playsInline preload="none" aria-label={label} onPlay={()=>setActive(true)} onPause={()=>setActive(false)}/><button className="preview-control" type="button" aria-label={active?pause:play} onClick={()=>{if(ref.current){if(active)ref.current.pause();else void ref.current.play();}}}><span aria-hidden="true">{active?"Ⅱ":"▶"}</span> {active?pause:play}</button></div>;}
