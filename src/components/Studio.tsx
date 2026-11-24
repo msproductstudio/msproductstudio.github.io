@@ -1,10 +1,11 @@
-import { studioCopy, studioEmail, type StudioLocale } from "@/studio-content";
+import { studioCopy, studioEmail, studioLegalName, studioCnpj, type StudioLocale } from "@/studio-content";
 
 export default function Studio({ lang }: { lang: StudioLocale }) {
   const c = studioCopy[lang];
   const schema = {
     "@context": "https://schema.org", "@type": "Organization",
     name: "MS Product Studio", url: "https://msproductstudio.github.io/",
+    legalName: studioLegalName, taxID: studioCnpj,
     email: studioEmail, description: c.description,
     founder: { "@type": "Person", name: "Matheus Luis Oliveira da Silva", url: "https://www.linkedin.com/in/matheuslosilva/" },
     sameAs: ["https://github.com/msproductstudio"],
@@ -45,7 +46,7 @@ export default function Studio({ lang }: { lang: StudioLocale }) {
         <div className="shell section-inner"><p className="eyebrow">{c.contactLabel}</p><h2 id="contact-title">{c.contactTitle}</h2><p>{c.contactIntro}</p><a className="email-link" href={`mailto:${studioEmail}`}>{studioEmail}</a></div>
       </section>
     </main>
-    <footer className="site-footer shell"><div><strong>MS Product Studio</strong><p>{c.owner}</p></div><div className="footer-links"><span>{c.country} · 2026</span><a href={lang === "pt" ? "/privacidade/" : "/privacy/"}>{c.privacy}</a></div></footer>
+    <footer className="site-footer shell"><div className="footer-identity"><strong>MS Product Studio</strong><p>{c.owner}</p><div className="company-identity"><p>{c.legalIntro}</p><p className="company-name">{studioLegalName}</p><p>CNPJ: {studioCnpj}</p></div></div><div className="footer-links"><span>{c.country} · 2026</span><a href={lang === "pt" ? "/privacidade/" : "/privacy/"}>{c.privacy}</a></div></footer>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schema).replace(/</g, "\\u003c")}} />
   </>;
 }

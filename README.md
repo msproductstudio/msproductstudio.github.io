@@ -7,14 +7,14 @@ Public website: **https://msproductstudio.github.io/**
 ## Content
 
 - Centered MS Product Studio title, monochrome design and a short introduction.
-- Money Alone and Nostrad4mus link to their public sites. Argos is clearly identified as a private pilot.
+- Money Alone and Nostrad4mus link to their public sites. Argos links to its public site and is identified as a product in testing.
 - The founder’s background comes from the previously verified portfolio content.
 - Public contact: ms.product.studio@gmail.com.
 - Portuguese at / and /pt/, English at /en/, privacy at /privacidade/ and /privacy/.
 - No forms, analytics, tracking cookies, API calls or product account data.
 - Self-hosted Manrope font; license retained in public/fonts.
 
-The studio is described as an independent initiative, not as a registered legal entity. This website supplies an authentic public presence. It does not prove Meta business verification or domain ownership. Any legal identity, business address, phone or registration documents required by Meta must be provided truthfully through its verification process.
+The footer, organization metadata and privacy notice identify the legal operator: MATHEUS LUIS OLIVEIRA DA SILVA DESENVOLVIMENTO DE SOFTWARE LTDA, CNPJ 68.901.515/0001-04. The legal identity was checked against the CNPJ certificate and JUCESP registration on 24 November 2026 and published with the owner's authorization. MS Product Studio is presented as the product studio; no registered trade name is claimed. Argos is linked to https://oiargos.com/ as a Studio product. These disclosures support Meta verification but do not imply approval by Meta.
 
 ## Development
 

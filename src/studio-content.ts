@@ -1,5 +1,7 @@
 export type StudioLocale = "pt" | "en";
 export const studioEmail = "ms.product.studio@gmail.com";
+export const studioLegalName = "MATHEUS LUIS OLIVEIRA DA SILVA DESENVOLVIMENTO DE SOFTWARE LTDA";
+export const studioCnpj = "68.901.515/0001-04";
 export const studioCopy = {
   pt: {
     description: "MS Product Studio é o estúdio independente de Matheus Silva. Engenharia de software, produtos digitais e experimentação.",
@@ -14,7 +16,7 @@ export const studioCopy = {
     projects: [
       { name: "Money Alone", category: "FINANÇAS PESSOAIS", description: "Organização das finanças pessoais: receitas, despesas, cartões e uma visão clara do mês.", href: "https://moneyalone.com" },
       { name: "Nostrad4mus", category: "IA & ENTRETENIMENTO", description: "Um experimento com previsões de inteligência artificial, perguntas e palpites. Feito para explorar possibilidades.", href: "https://nostrad4mus.com" },
-      { name: "Argos", category: "INFORMAÇÃO & TECNOLOGIA", description: "Um projeto em testes para ajudar a checar informações por texto no WhatsApp, com pesquisa e referências.", href: null },
+      { name: "Argos", category: "INFORMAÇÃO & TECNOLOGIA", description: "Um produto do MS Product Studio, em fase de testes, para ajudar a checar informações por texto no WhatsApp, com pesquisa e referências.", href: "https://oiargos.com/" },
     ],
     aboutLabel: "QUEM ESTÁ POR TRÁS", aboutTitle: "Olá, sou o Matheus.",
     about: "Sou engenheiro de software e bacharel em Ciência da Computação pela USP. Trabalho com desenvolvimento de produtos, sistemas distribuídos e infraestrutura em nuvem.",
@@ -23,6 +25,7 @@ export const studioCopy = {
     contactLabel: "VAMOS CONVERSAR", contactTitle: "Uma ideia começa\ncom uma conversa.",
     contactIntro: "Para falar sobre o Studio, nossos projetos ou uma colaboração.",
     owner: "Uma iniciativa de Matheus Luis Oliveira da Silva.", country: "Brasil",
+    legalIntro: "MS Product Studio é o estúdio de produtos digitais operado por:",
     privacy: "Privacidade", back: "Voltar ao site",
   },
   en: {
@@ -38,7 +41,7 @@ export const studioCopy = {
     projects: [
       { name: "Money Alone", category: "PERSONAL FINANCE", description: "Personal finance organization: income, expenses, cards and a clear view of the month.", href: "https://moneyalone.com" },
       { name: "Nostrad4mus", category: "AI & ENTERTAINMENT", description: "An experiment with AI predictions, questions and guesses. Built to explore possibilities.", href: "https://nostrad4mus.com" },
-      { name: "Argos", category: "INFORMATION & TECHNOLOGY", description: "A project in testing to help check information sent as text on WhatsApp, using research and references.", href: null },
+      { name: "Argos", category: "INFORMATION & TECHNOLOGY", description: "A product by MS Product Studio, currently in testing, to help check information sent as text on WhatsApp, using research and references.", href: "https://oiargos.com/" },
     ],
     aboutLabel: "THE PERSON BEHIND THE STUDIO", aboutTitle: "Hello, I’m Matheus.",
     about: "I’m a software engineer with a Computer Science degree from the University of São Paulo. I work on digital products, distributed systems and cloud infrastructure.",
@@ -47,6 +50,7 @@ export const studioCopy = {
     contactLabel: "LET’S TALK", contactTitle: "An idea starts\nwith a conversation.",
     contactIntro: "Get in touch about the Studio, our projects or a collaboration.",
     owner: "An initiative by Matheus Luis Oliveira da Silva.", country: "Brazil",
+    legalIntro: "MS Product Studio is the digital product studio operated by:",
     privacy: "Privacy", back: "Back to the site",
   },
 } as const;
