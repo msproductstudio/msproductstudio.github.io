@@ -1,57 +1,31 @@
-# Matheus Silva · MS Product Studio
+# MS Product Studio
 
-Bilingual personal portfolio built with Next.js and TypeScript. Static output for GitHub Pages at **https://msproductstudio.github.io**.
+Simple, bilingual institutional landing page for Matheus Silva’s independent product studio.
 
-MS Product Studio is Matheus Silva's recently created initiative. The site describes his own experience and research; it does not imply an established studio team or client portfolio.
+Public website: **https://msproductstudio.github.io/**
 
-## Develop in Ubuntu / WSL
+## Content
 
-Canonical checkout: `/home/matheus/MSPRODUCTSTUDIO/portfolio`.
-The workspace root is not a Git repository. The two simulation repositories are sibling directories.
+- Centered MS Product Studio title, monochrome design and a short introduction.
+- Money Alone and Nostrad4mus link to their public sites. Argos is clearly identified as a private pilot.
+- The founder’s background comes from the previously verified portfolio content.
+- Public contact: ms.product.studio@gmail.com.
+- Portuguese at / and /pt/, English at /en/, privacy at /privacidade/ and /privacy/.
+- No forms, analytics, tracking cookies, API calls or product account data.
+- Self-hosted Manrope font; license retained in public/fonts.
 
-Requires Node.js 24 and npm.
+The studio is described as an independent initiative, not as a registered legal entity. This website supplies an authentic public presence. It does not prove Meta business verification or domain ownership. Any legal identity, business address, phone or registration documents required by Meta must be provided truthfully through its verification process.
 
-```sh
-npm ci
-npm run dev
-```
+## Development
 
-Open http://localhost:3100/pt/ or http://localhost:3100/en/ from Windows or Linux.
+Canonical checkout: /home/matheus/MSPRODUCTSTUDIO/portfolio in Ubuntu WSL.
 
-```sh
-npm run check
-npm run build
-npm run preview
-```
+Run npm ci, npm run check and npm run build. npm run preview serves the static output on port 3100. Builds and project commands run in WSL; browser checks may run in Windows.
 
-The static build is in `out/`. The preview command serves that directory on port 3100. Stop any existing preview before starting another on the same port.
+Existing research components, source content and media remain in the repository for future reuse; the institutional landing page uses src/components/Studio.tsx and src/studio-content.ts.
 
-## Design and content
+## Publishing
 
-- `src/app/globals.css`: design tokens, typography, shared components and responsive rules.
-- `src/content.ts`: complete Portuguese and English copy.
-- `src/components/Portfolio.tsx`: sections and verified institutional research references.
-- `src/components/Leaf.tsx`: original decorative vector illustration.
-- `src/components/MotionPreview.tsx`: user-controlled video; no autoplay.
-- `public/fonts/`: self-hosted Manrope and IBM Plex Mono with their SIL Open Font Licenses.
-- `public/media/`: real research media. See [media provenance](MEDIA.md).
+The GitHub Pages workflow builds and publishes out/ from main using GitHub Actions. No custom domain or paid hosting is configured. The workflow must be enabled. Production URL and canonical metadata are https://msproductstudio.github.io/.
 
-The site makes no API requests, collects no analytics, uses no cookies, and has no backend. Add a query layer only when a concrete remote data requirement exists. Never place secrets in client-side variables.
-
-Routes `/pt/` and `/en/` are independently exported HTML with language-specific metadata and alternate links. `/` serves Portuguese. GitHub Pages must use **GitHub Actions** as its build source.
-
-## Source and editorial boundaries
-
-Professional history, education, skills and contact links were transcribed and translated from the owner-provided résumé. The résumé file, phone number and private files are not published.
-
-Research event records link to IFSP/USP. SIICUSP schedule entries are labeled symposium presentations, not peer-reviewed journal articles. Original Portuguese titles remain visible on the English page alongside translations. The research report is linked to its original repository with author and supervisor credited.
-
-The résumé describes CUDA and evolutionary research. The current Ant Colony `main` is a C++/OpenGL implementation; the current Makefile has no CUDA compiler step. The site states this distinction.
-
-Both original repositories retain their history and collaborators; no ownership or access changes are required by this portfolio.
-
-## Deployment
-
-Push to `main` runs the static build and deploys the output through the official GitHub Pages Actions. The workflow uses a read-only build job and grants Pages/id-token permissions only to deployment. No paid infrastructure is needed.
-
-Before publishing content changes, verify both languages, mobile navigation, project links, video controls and the generated HTML. A portrait can be added later; no synthetic portrait is used.
+Before publishing, check both languages, project and contact links, privacy pages, keyboard navigation and mobile overflow.
